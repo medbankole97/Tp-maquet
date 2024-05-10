@@ -1,8 +1,9 @@
 body{
-    margin: 0;
-    padding:0;
+    margin: 50px;
+    padding:0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #ccc;
 
 }
 
@@ -12,15 +13,15 @@ body{
     border: 1px solid #ccc;
 }
 
-.left{
+.left-content{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
-    width: 50%;
+    background-color: #ffffff;
+    /* border-radius: 15px 15px 15px 15px; */
+    width: 100%;
     padding: 30px 0;
     margin-left:40px ;
-    
 
 }
 .contents{
@@ -29,42 +30,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: 80px; /
 }
 
-.login{
-    margin: 10px 0
+a{
+    text-decoration: none;
 }
 
-.item{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.item2 div{
-    display: flex;
-    justify-content: space-between;
-    margin: 2px;
-}
-.item1,.item2,.item3,.item4{
-    margin-top: 20px;
-}
-
-input[type="email"],
-input[type="text"],
-input[type="password"]{
-    padding: 8px;
-    border-radius: 10px ;
-}
-/ input[type="checkbox"]{
-    display: 0;
-} */
-
-.btn{
+.boutton{
     margin: 20px 0;
     padding: 20px;
 }
-.btn button{
+.boutton button{
     width: 100%;
     background-color:#3a5b22;
     color: #ffffff;
@@ -73,17 +49,14 @@ input[type="password"]{
     border-radius: 10px;
 }
 
-.btn button:hover{
+.boutton button:hover{
     background-color: rgba(58, 91, 34, 0.915);
 }
 
 span{
     position: relative;
     text-align: center;
-    margin: 20px 0;
-}
-a{
-    text-decoration: none;
+    
 }
 
 span::before,
@@ -101,11 +74,12 @@ span::before{
     left: 0;
 }
 
-.reseau{
+.icone{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 50px 0;
+    margin: 20px 0;
+    width: 400px;
 }
 
 .google{
@@ -115,6 +89,7 @@ span::before{
     display: flex;
     align-items: center;
     border-radius: 10px;
+    width: 100%;
 }
 .google:hover{
     background-color: #f5f5f5;
@@ -132,6 +107,8 @@ span::before{
     align-items: center;
     border-radius: 10px;
     transition: 0.5s ease-in;
+    width: 100%;
+    
 }
 .apple:hover{
     background-color: #f5f5f5;
@@ -141,30 +118,37 @@ span::before{
     margin: 5px;
 }
 
-.p-bas{
-    text-align: center;
-    /* margin-bottom: 20px; */
-}
+/* .p-bas{
+    text-align: center; 
+    margin-bottom: 20px;
+} */
 
-.right{
+/* .droite{
+    display: flex;
+    position: absolute;
     width: 50%;
     height: 100vh;
-    margin-right: 40px;
+    margin-right: 0;
     
 }
+.image{
+    display: flex;
+    position: relative;
+    margin-left: 100px;
+}
 
-.right img{
+.droite img{
     width: 100%;
     height: 100vh;
     margin-right: 40px;
     
-}
+} */
 
  label {
         display: block;
         font-weight: bold;
       }
-      
+      input[type="text"],
       input[type="email"],
       input[type="password"] {
         width: 100%;
@@ -172,5 +156,16 @@ span::before{
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+       
+        
       }
+#forget{
+display: flex;
+justify-content: space-between;
+/* color: #0f3ddf; */
+} 
+.forpass{
+    color: #0f3ddf;  
+}
 
+ 
